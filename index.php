@@ -2592,6 +2592,13 @@ window.application = new Application();
 </script>
 </head>
 <body>
+
+<?php
+
+echo $_POST['LMI_PAYMENT_AMOUNT'];
+
+?>
+
 <div id="Canvas">
 	<img id="Background" src="Background.png" srcset="Background.png 1x, Background@2x.png 2x">
 	<img id="art_devushka_pisatel" src="art_devushka_pisatel.png" srcset="art_devushka_pisatel.png 1x, art_devushka_pisatel@2x.png 2x">
