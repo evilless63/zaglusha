@@ -2627,7 +2627,7 @@ echo $_POST['LMI_PAYMENT_AMOUNT'];
     top: 129px;
     list-style: none;
     color: #fff;
-	font-size: 2em;">
+	font-size: 1.5em;">
 	<h4 style="
     color: #ffffff;
     text-align: center;
