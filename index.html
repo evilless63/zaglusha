@@ -2622,16 +2622,26 @@ echo $_POST['LMI_PAYMENT_AMOUNT'];
 		<span>VladisLava</span><span style="font-family:SegoeUI-Light;"> - </span><span style="font-family:SegoeUI-Light;color:rgba(255,255,255,1);">пишу, дышу, чувствую</span><span>!</span>
 	</div>
 
-	<ul style="position: absolute;left: 436px;
-    top: 470px;">
-		<li>
-			<a href="1">Сборник стихов 1</a>
+	<ul style="     position: absolute;
+    left: 360px;
+    top: 129px;
+    list-style: none;
+    color: #fff;
+    font-size: 2em;">
+		<li style="display: flex;
+        align-items: center;">
+			<img style="width: 30%;" src="Ellipse1.png" alt=""><a style="color: #fff;" target="_blank" href="Sbornik_stikhov_i_proizvedeniy.pdf">Сборник стихов 1</a>
 		</li>
-		<li>
-			<a href="2">Сборник стихов 2</a>
+		<li style="display: flex;
+        align-items: center;">
+			<img style="    width: 19%;
+            margin-left: 21px;
+            margin-right: 27px;
+        "  src="Clip.png" alt=""><a style="color: #fff;" target="_blank" href="Sbornik_stikhov_i_proizvedeniy_2.pdf">Сборник стихов 2</a>
 		</li>
-		<li>
-			<a href="3">Мельхиор</a>
+		<li style="display: flex;
+        align-items: center;">
+			<img style="width: 30%;" src="Ellips2.png" alt=""><a style="color: #fff;" target="_blank" href="MEL_KhIOR_4.pdf">Мельхиор</a>
 		</li>
 	</ul>
 
@@ -2660,16 +2670,6 @@ echo $_POST['LMI_PAYMENT_AMOUNT'];
         
 </div>
 
-<div id='pwyw' style='width: 175px;'></div>
-<script type='text/javascript' src='https://merchant.webmoney.ru/conf/lib/widgets/wmApp.js?v=1.1'></script>
-<script type='text/javascript'>
- window.webmoney.widgets().PWYW.create({ lang: 'ru', data: { amount: null, purse: 'R696908455766', desc: 'тестовый товар' } })
-   .on('paymentComplete', function (data) {
-   // your code
-     console.log(data)
-   })
-   .mount('pwyw')
-</script>
 
 </body>
 </html>
