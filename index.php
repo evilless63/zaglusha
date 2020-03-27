@@ -2627,7 +2627,16 @@ echo $_POST['LMI_PAYMENT_AMOUNT'];
     top: 129px;
     list-style: none;
     color: #fff;
-    font-size: 2em;">
+	font-size: 2em;">
+	<h4 style="
+    color: #ffffff;
+    text-align: center;
+    /* background: #a64701; */
+    "><span style="
+    background-color: blueviolet;
+">Поддержи писателя, купить стихи</span>
+    
+    </h4>
 		<li style="display: flex;
         align-items: center;">
 			<img style="width: 30%;" src="Ellipse1.png" alt=""><a style="color: #fff;" target="_blank" href="Sbornik_stikhov_i_proizvedeniy.pdf">Сборник стихов 1</a>
