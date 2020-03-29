@@ -18,7 +18,8 @@ include_once('PHPMailer/SMTP.php');
 //         if (strtoupper($key) != $_POST['LMI_HASH']) {
 // exit();
 // 		} else {
-            $email = new PHPMailer();
+    try {
+        $email = new PHPMailer();
             $email->SetFrom('vladislava@gmail.com', 'Поэт'); //Name is optional
             $email->Subject   = 'Стихи';
             $email->Body      = 'Пароль от архива: yreyuifuhwhfiuhiu837438';
@@ -30,4 +31,8 @@ include_once('PHPMailer/SMTP.php');
             $email->AddAttachment( $file_to_attach , 'stihi.zip' );
             
             return $email->Send();
+    } catch (Throwable $e) {
+        echo "Captured Throwable: " . $e->getMessage() . PHP_EOL;
+    }
+            
 	// } 
