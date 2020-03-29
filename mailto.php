@@ -23,7 +23,17 @@ require 'vendor/autoload.php';
 // 		} else {
     try { 
         $email = new PHPMailer();
-            $email->SetFrom('vladislava@gmail.com', 'Поэт'); //Name is optional
+
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+        $mail->isSMTP();                                            // Send using SMTP
+        $mail->Host       = 'smtp.googlemail.com';                    // Set the SMTP server to send through
+        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+        $mail->Username   = 'r.nightcherry@gmail.com';                     // SMTP username
+        $mail->Password   = 'oxwuheztxpaadjdv';                               // SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+        $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    
+            $email->SetFrom('info@a.nc-samara.com', 'a.nc-samara'); //Name is optional
             $email->Subject   = 'Стихи';
             $email->Body      = 'Пароль от архива: yreyuifuhwhfiuhiu837438';
             // $email->AddAddress( $_POST['paymentemail'] );
@@ -33,7 +43,8 @@ require 'vendor/autoload.php';
             
             $email->AddAttachment( $file_to_attach , 'stihi.zip' );
             
-            return $email->Send();
+            $mail->send();
+    
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
