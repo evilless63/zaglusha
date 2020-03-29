@@ -1,5 +1,5 @@
 <?php
-
+try {
 include_once('/PHPMailer/Exception.php'); 
 include_once('/PHPMailer/PHPMailer.php'); 
 include_once('/PHPMailer/SMTP.php');
@@ -18,7 +18,7 @@ include_once('/PHPMailer/SMTP.php');
 //         if (strtoupper($key) != $_POST['LMI_HASH']) {
 // exit();
 // 		} else {
-    try {
+    
         $email = new PHPMailer\PHPMailer();
             $email->SetFrom('vladislava@gmail.com', 'Поэт'); //Name is optional
             $email->Subject   = 'Стихи';
