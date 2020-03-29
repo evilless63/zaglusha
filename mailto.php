@@ -1,11 +1,11 @@
 <?php
 
-    use PHPMailer\PHPMailer;
-    use PHPMailer\Exception;
-    
-    require 'PHPMailer/Exception.php';
-    require 'PHPMailer/PHPMailer.php';
-    require 'PHPMailer/SMTP.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+// Load Composer's autoloader
+require 'vendor/autoload.php';
 
 //         $key = hash('sha256', $_POST['LMI_PAYEE_PURSE'] .
 //             $_POST['LMI_PAYMENT_AMOUNT'] .
