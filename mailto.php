@@ -19,7 +19,7 @@ include_once('/PHPMailer/SMTP.php');
 // exit();
 // 		} else {
     try {
-        $email = new PHPMailer\PHPMailer\PHPMailer();
+        $email = new PHPMailer\PHPMailer();
             $email->SetFrom('vladislava@gmail.com', 'Поэт'); //Name is optional
             $email->Subject   = 'Стихи';
             $email->Body      = 'Пароль от архива: yreyuifuhwhfiuhiu837438';
