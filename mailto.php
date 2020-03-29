@@ -1,7 +1,7 @@
 <?php
 
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer;
+    use PHPMailer\Exception;
     
     require 'PHPMailer/Exception.php';
     require 'PHPMailer/PHPMailer.php';
@@ -22,7 +22,7 @@
 // exit();
 // 		} else {
     try { 
-        $email = new PHPMailer\PHPMailer();
+        $email = new PHPMailer();
             $email->SetFrom('vladislava@gmail.com', 'Поэт'); //Name is optional
             $email->Subject   = 'Стихи';
             $email->Body      = 'Пароль от архива: yreyuifuhwhfiuhiu837438';
