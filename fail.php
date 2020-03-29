@@ -2593,11 +2593,9 @@ window.application = new Application();
 </head>
 <body>
 
-<?php
 
-echo $_POST['LMI_PAYMENT_AMOUNT'];
+		
 
-?>
 
 <div id="Canvas">
 	<img id="Background" src="Background.png" srcset="Background.png 1x, Background@2x.png 2x">
@@ -2622,36 +2620,23 @@ echo $_POST['LMI_PAYMENT_AMOUNT'];
 		<span>VladisLava</span><span style="font-family:SegoeUI-Light;"> - </span><span style="font-family:SegoeUI-Light;color:rgba(255,255,255,1);">пишу, дышу, чувствую</span><span>!</span>
 	</div>
 
+	
+	<ul style="     position: absolute;
+    left: 360px;
+    top: 129px;
+    list-style: none;
+    color: #fff;
+	font-size: 1.5em;">
+	<h4 style="
+    color: #ffffff;
+    text-align: center;
+    /* background: #a64701; */
+    "><span style="
+    background-color: blueviolet;
+">Оплата не произошла, стихи недоступны</span>
+    
+	</ul>   
 
-	<form id=pay name=pay method="POST" action="https://merchant.webmoney.ru/lmi/payment_utf.asp?at=authtype_16" style="border: none;
-    position: absolute;
-    /* width: 358px; */
-    /* height: 67px; */
-    left: 436px;
-    top: 470px;
-    background: #6e537e;
-    padding: 10px;
-    color: aliceblue;"> 
-		<p>Поддержать автора, купив стихи !</p> 
-		<p>
-		  <input type="text" name="LMI_PAYMENT_AMOUNT" value="">
-		  <input type="text" placeholder="Почта, куда отправить стихи после оплаты" name="paymentemail" value="">
-		  <input type="hidden" name="LMI_PAYMENT_DESC" value="тестовый платеж">
-		  <input type="hidden" name="LMI_PAYMENT_NO" value="1">
-		  <input type="hidden" name="LMI_RESULT_URL" value="https://a.nc-samara.com/mailto.php">
-		  <input type="hidden" name="LMI_SUCCESS_URL" value="https://a.nc-samara.com/success.php">
-		  <input type="hidden" name="LMI_FAIL_URL" value="https://a.nc-samara.com/fail.php">
-		  
-		  <input type="hidden" name="LMI_PAYEE_PURSE" value="R696908455766">
-		  <input type="hidden" name="LMI_SIM_MODE" value="0"> 
-		  <input type="hidden" name="LMI_ALLOW_SDP" value="4"> 
-		</p> 
-		<p>
-		 <input type="submit" value="Отправить">
-		 </p> 
-        </form> 
-        
-        
 </div>
 
 
