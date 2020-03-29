@@ -1,8 +1,8 @@
 <?php
 
-include_once('PHPMailer/Exception.php'); 
-include_once('PHPMailer/PHPMailer.php'); 
-include_once('PHPMailer/SMTP.php');
+include_once('/PHPMailer/Exception.php'); 
+include_once('/PHPMailer/PHPMailer.php'); 
+include_once('/PHPMailer/SMTP.php');
 
 //         $key = hash('sha256', $_POST['LMI_PAYEE_PURSE'] .
 //             $_POST['LMI_PAYMENT_AMOUNT'] .
@@ -19,7 +19,7 @@ include_once('PHPMailer/SMTP.php');
 // exit();
 // 		} else {
     try {
-        $email = new PHPMailer();
+        $email = new PHPMailer\PHPMailer\PHPMailer();
             $email->SetFrom('vladislava@gmail.com', 'Поэт'); //Name is optional
             $email->Subject   = 'Стихи';
             $email->Body      = 'Пароль от архива: yreyuifuhwhfiuhiu837438';
