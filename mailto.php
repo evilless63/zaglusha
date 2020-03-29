@@ -1,8 +1,11 @@
 <?php
-try {
-include_once('/PHPMailer/Exception.php'); 
-include_once('/PHPMailer/PHPMailer.php'); 
-include_once('/PHPMailer/SMTP.php');
+
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    
+    require 'PHPMailer/Exception.php';
+    require 'PHPMailer/PHPMailer.php';
+    require 'PHPMailer/SMTP.php';
 
 //         $key = hash('sha256', $_POST['LMI_PAYEE_PURSE'] .
 //             $_POST['LMI_PAYMENT_AMOUNT'] .
@@ -18,7 +21,7 @@ include_once('/PHPMailer/SMTP.php');
 //         if (strtoupper($key) != $_POST['LMI_HASH']) {
 // exit();
 // 		} else {
-    
+    try { 
         $email = new PHPMailer\PHPMailer();
             $email->SetFrom('vladislava@gmail.com', 'Поэт'); //Name is optional
             $email->Subject   = 'Стихи';
