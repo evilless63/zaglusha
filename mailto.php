@@ -34,8 +34,8 @@ require 'vendor/autoload.php';
             $email->AddAttachment( $file_to_attach , 'stihi.zip' );
             
             return $email->Send();
-    } catch (Throwable $e) {
-        echo "Captured Throwable: " . $e->getMessage() . PHP_EOL;
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
             
 	// } 
