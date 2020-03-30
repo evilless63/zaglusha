@@ -2655,7 +2655,7 @@ margin-right: 27px;
 		</li>
 	</ul>
 
-	<form id=pay name=pay method="POST" action="https://merchant.webmoney.ru/lmi/payment_utf.asp?at=authtype_16" style="border: none;
+	<form id=pay name=pay method="POST" action="https://merchant.webmoney.ru/lmi/payment_utf.asp?" style="border: none;
     position: absolute;
     /* width: 358px; */
     /* height: 67px; */
@@ -2676,7 +2676,6 @@ margin-right: 27px;
 		  
 		  <input type="hidden" name="LMI_PAYEE_PURSE" value="R696908455766">
 		  <input type="hidden" name="LMI_SIM_MODE" value="0"> 
-		  <input type="hidden" name="LMI_ALLOW_SDP" value="4"> 
 		</p> 
 		<p>
 		 <input type="submit" value="Отправить">
