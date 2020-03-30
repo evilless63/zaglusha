@@ -2667,7 +2667,7 @@ margin-right: 27px;
 		<p>Поддержать автора, купив стихи !</p> 
 		<p>
 		  <input type="text" name="LMI_PAYMENT_AMOUNT" value="">
-		  <input type="text" placeholder="Почта, куда отправить стихи после оплаты" name="paymentemail" value="">
+		  <input type="text" placeholder="Почта, куда отправить стихи после оплаты" name="paymentemail" value="" required>
 		  <input type="hidden" name="LMI_PAYMENT_DESC" value="тестовый платеж">
 		  <input type="hidden" name="LMI_PAYMENT_NO" value="1">
 		  <input type="hidden" name="LMI_RESULT_URL" value="https://a.nc-samara.com/mailto.php">
