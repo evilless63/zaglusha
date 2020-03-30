@@ -2601,7 +2601,7 @@ echo $_POST['LMI_PAYMENT_AMOUNT'];
 
 <div id="Canvas">
 	<img id="Background" src="Background.png" srcset="Background.png 1x, Background@2x.png 2x">
-	<img id="art_devushka_pisatel" src="art_devushka_pisatel.png" srcset="art_devushka_pisatel.png 1x, art_devushka_pisatel@2x.png 2x">
+	<img id="art_devushka_pisatel" src="art_devushka_pistel192.jpg" srcset="art_devushka_pisatel.png 1x, art_devushka_pisatel@2x.png 2x">
 	<img id="Layer_1" src="Layer_1.png" srcset="Layer_1.png 1x, Layer_1@2x.png 2x">
 	<svg class="Rectangle_1">
 		<rect fill="rgba(166,71,1,1)" id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="859" height="64">
