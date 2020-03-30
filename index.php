@@ -2631,6 +2631,7 @@ echo $_POST['LMI_PAYMENT_AMOUNT'];
 	<h4 style="
     color: #ffffff;
     text-align: center;
+	font-size: 0.8em;
     /* background: #a64701; */
     "><span style="
     background-color: blueviolet;
@@ -2639,18 +2640,18 @@ echo $_POST['LMI_PAYMENT_AMOUNT'];
     </h4>
 		<li style="display: flex;
         align-items: center;">
-			<img style="width: 30%;" src="Ellipse1.png" alt=""><a style="color: #fff;" target="_blank" href="">Сборник стихов 1</a>
+			<img style="width: 22%;" src="Ellipse1.png" alt=""><a style="color: #fff;" target="_blank" href="">Сборник стихов 1</a>
 		</li>
 		<li style="display: flex;
         align-items: center;">
-			<img style="    width: 19%;
-            margin-left: 21px;
-            margin-right: 27px;
+			<img style=" width: 14%;
+margin-left: 16px;
+margin-right: 27px;
         "  src="Clip.png" alt=""><a style="color: #fff;" target="_blank" href="">Сборник стихов 2</a>
 		</li>
 		<li style="display: flex;
         align-items: center;">
-			<img style="width: 30%;" src="Ellips2.png" alt=""><a style="color: #fff;" target="_blank" href="">Мельхиор</a>
+			<img style="width: 22%;" src="Ellips2.png" alt=""><a style="color: #fff;" target="_blank" href="">Мельхиор</a>
 		</li>
 	</ul>
 
