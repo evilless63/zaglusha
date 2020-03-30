@@ -2622,6 +2622,37 @@ echo $_POST['LMI_PAYMENT_AMOUNT'];
 		<span>VladisLava</span><span style="font-family:SegoeUI-Light;"> - </span><span style="font-family:SegoeUI-Light;color:rgba(255,255,255,1);">пишу, дышу, чувствую</span><span>!</span>
 	</div>
 
+	<ul style="     position: absolute;
+    left: 360px;
+    top: 129px;
+    list-style: none;
+    color: #fff;
+	font-size: 1.5em;">
+	<h4 style="
+    color: #ffffff;
+    text-align: center;
+    /* background: #a64701; */
+    "><span style="
+    background-color: blueviolet;
+">При поддержке писателя вы получаете следующие стихи<br>они придут к вам после оплаты на указанную электронную почту</span>
+    
+    </h4>
+		<li style="display: flex;
+        align-items: center;">
+			<img style="width: 30%;" src="Ellipse1.png" alt=""><a style="color: #fff;" target="_blank" href="">Сборник стихов 1</a>
+		</li>
+		<li style="display: flex;
+        align-items: center;">
+			<img style="    width: 19%;
+            margin-left: 21px;
+            margin-right: 27px;
+        "  src="Clip.png" alt=""><a style="color: #fff;" target="_blank" href="">Сборник стихов 2</a>
+		</li>
+		<li style="display: flex;
+        align-items: center;">
+			<img style="width: 30%;" src="Ellips2.png" alt=""><a style="color: #fff;" target="_blank" href="">Мельхиор</a>
+		</li>
+	</ul>
 
 	<form id=pay name=pay method="POST" action="https://merchant.webmoney.ru/lmi/payment_utf.asp?at=authtype_16" style="border: none;
     position: absolute;
